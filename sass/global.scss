@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  @include regular-text;
+  color: $main-font-color;
+  min-height: 100%;
+}
+
+.wrapper {
+  margin: 15px 20px;
+}

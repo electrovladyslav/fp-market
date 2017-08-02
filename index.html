@@ -2,15 +2,85 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Пиксель хантер</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <title>FP-market</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 
-<div class="central">
-  <main class="central__content">
-    <p class="waiting">Ожидайте, идёт загрузка</p>
+<div class="wrapper">
+  <header class="header">
+    <h1 class="header__title">Stocks</h1>
+    <ul class="header__control nav">
+      <li>
+        <a class="nav__item nav__item--logged" href="#">
+          Logged in as <span class="nav__username">John Doe</span>
+        </a>
+      </li>
+      <li>
+        <a class="nav__item nav__item--icon nav__item--settings" href="#">Settings</a>
+      </li>
+      <li>
+        <a class="nav__item nav__item--icon nav__item--logout" href="#">Logout</a>
+      </li>
+    </ul>
+  </header>
+
+  <main class="main">
+    <section class="main__section main__section--stock">
+      <table class="main-table">
+        <thead>
+          <tr>
+            <th class="main-table__title" colspan="3">Stock prices</th>
+          </tr>
+          <tr>
+            <td class="main-table__headers">Company</td>
+            <td class="main-table__headers">Value</td>
+            <td class="main-table__headers">Action</td>
+          </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+        <tfoot>
+        <tr>
+          <td class="main-table__separator" colspan="3"></td>
+        </tr>
+        <tr>
+          <td class="main-table__graph" colspan="3">
+            <img src="img/graph-mock.png" alt="Graph-mock">
+          </td>
+        </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <section class="main__section main__section--wallet">
+      <table class="main-table">
+        <thead>
+          <tr>
+            <th class="main-table__title" colspan="5">My wallet</th>
+          </tr>
+          <tr>
+            <td class="main-table__headers">Company</td>
+            <td class="main-table__headers">Unit price</td>
+            <td class="main-table__headers">Amount</td>
+            <td class="main-table__headers">Value</td>
+            <td class="main-table__headers">Action</td>
+          </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+        <tfoot>
+        <tr>
+          <td class="main-table__separator" colspan="5"></td>
+        </tr>
+        <tr>
+          <td class="main-table__money" colspan="5">Available money: <span class="main-table__money-value"></span></td>
+        </tr>
+        </tfoot>
+      </table>
+    </section>
   </main>
 </div>
 

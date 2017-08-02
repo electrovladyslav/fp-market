@@ -8,5 +8,6 @@
 yarn.lock
 build/
 node_modules/
+mockup/
 npm-debug.*
 Thumbs.db
