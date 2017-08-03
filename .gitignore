@@ -1,11 +1,11 @@
 .DS_Store
 .idea
+.publish
 *.ai
 *.log
 *.pdf
 *.psd
 *.sublime*
-yarn.lock
 build/
 node_modules/
 mockup/

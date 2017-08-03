@@ -6,36 +6,4 @@
 .main__section {
   width: 49.5%;
 }
-.main-table {
-  width: 100%;
-
-  @include border;
-  border-collapse: collapse;
-
-  & td{
-    @include border;
-    padding: 15px 5px;
-    font-size: 24px;
-    text-align: left;
-  }
-}
-
-.main-table__title{
-  padding: 25px 15px;
-  font-size: 30px;
-  text-align: left;
-}
-
-.main-table__headers{
-  background-color: $table-headers-color;
-}
-
-.main-table__separator {
-  height: 50px;
-}
-
-.main-table__graph img {
-  width: 100%;
-  height: auto;
-}
 

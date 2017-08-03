@@ -1,0 +1,51 @@
+.main-table {
+  width: 100%;
+
+  @include border;
+  border-collapse: collapse;
+
+  & td{
+    @include border;
+    padding: 15px 5px;
+    font-size: 24px;
+    text-align: left;
+  }
+}
+
+.main-table__title{
+  padding: 25px 15px;
+  font-size: 30px;
+  text-align: left;
+}
+
+.main-table__headers{
+  background-color: $table-headers-color;
+}
+
+.main-table__separator {
+  height: 50px;
+}
+
+.main-table__graph img {
+  width: 100%;
+  height: auto;
+}
+
+td.main-table__td-btn {
+  text-align: center;
+}
+
+.main-table__btn {
+  padding: 3px 40px;
+  @include regular-text;
+  border: 4px solid $border-color;
+  border-radius: 10px;
+  background-color: $table-btn-color;
+  cursor: pointer;
+
+  &:focus,
+  &:active,
+  &:visited {
+    outline: none;
+  }
+}

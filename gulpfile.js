@@ -14,6 +14,7 @@ const imagemin = require('gulp-imagemin');
 const rollup = require('gulp-better-rollup');
 const sourcemaps = require('gulp-sourcemaps');
 const mocha = require('gulp-mocha');
+var ghPages = require('gulp-gh-pages');
 
 gulp.task('style', function () {
   gulp.src('sass/style.scss')
@@ -112,3 +113,8 @@ gulp.task('assemble', ['clean'], function () {
 });
 
 gulp.task('build', ['assemble', 'imagemin']);
+
+gulp.task('deploy', function() {
+  return gulp.src('./build/**/*')
+    .pipe(ghPages());
+});
