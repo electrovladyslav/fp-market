@@ -1,11 +1,11 @@
 * Testing task from [Future Processing](http://www.future-processing.com/).
 * Applicant: Yermolin Vladyslav.
 
-#TASK DESCRIPTION
+# TASK DESCRIPTION
 
 Create an application for simulating a stock exchange where users can buy or sell their virtual shares based on current real market values.
 
-##Description of application
+## Description of application
 
 Application hosted on git-hub. To run it on local machine you should have installed [node.js](https://nodejs.org/en/) and git. Choose directory and clone repository:
 ```
