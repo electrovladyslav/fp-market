@@ -114,7 +114,7 @@ gulp.task('assemble', ['clean'], function () {
 
 gulp.task('build', ['assemble', 'imagemin']);
 
-gulp.task('deploy', function() {
+gulp.task('deploy', ['build'], function() {
   return gulp.src('./build/**/*')
     .pipe(ghPages());
 });
